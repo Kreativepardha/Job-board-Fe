@@ -33,7 +33,7 @@ export function JobCard({ job }: JobCardProps) {
       <div
         className={cn(
           "relative text-white h-96 rounded-xl p-4 shadow-lg text-blac flex flex-col justify-between transition duration-300 ease-in-out group-hover/card:scale-[1.02] group-hover/card:shadow-2xl",
-          "bg-gradient-to-br from-cyan-400 via-cyan to-gray-200 dark:from-neutral-900 dark:to-neutral-800"
+          "bg-gradient-to-br from-black/70 via-black to-black/90 dark:from-neutral-900 dark:to-neutral-800"
         )}
       >
         {/* Top: Company Logo Replacement */}
@@ -45,7 +45,7 @@ export function JobCard({ job }: JobCardProps) {
             {job.company.charAt(0).toUpperCase()}
           </div>
           <div className="flex flex-col">
-            <p className="text-base font-semibold text-white dark:text-gray-100">
+            <p className="text-base font-semibold  dark:text-gray-100">
               {job.company}
             </p>
             <p className="text-sm text-black dark:text-gray-400">
@@ -56,10 +56,10 @@ export function JobCard({ job }: JobCardProps) {
 
         {/* Bottom: Job Title + Type */}
         <div className="z-10 mt-auto">
-          <h1 className="font-bold text-xl text-black dark:text-white mb-2">
+          <h1 className="font-bold text-xl text-white dark:text-white mb-2">
             {job.title}
           </h1>
-          <p className="text-sm text-gray-900 dark:text-gray-300">
+          <p className="text-sm text-neutral-100 dark:text-gray-300">
             {job.type} role at {job.company}
           </p>
         </div>
