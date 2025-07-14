@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Job } from '@/types';
-import { JobCard } from '@/components/job/JobCard';
-import { client } from '@/api/client';
+import type { Job } from '../types';
+import { client } from '../api/client';
+import { JobCard } from '../components/job/JobCard';
+
 
 export default function HomePage() {
   const [jobs, setJobs] = useState<Job[]>([]);
